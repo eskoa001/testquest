@@ -7,6 +7,12 @@ import math
 
 # 2 - definer constanter
 BACKGROUND = (135, 206, 235) # definerer bakgrunns farge som himmel blå
+Farger = {
+  "Blå": (0,0,255),
+  "Rød": (255,0,0),
+  "Grønn": (0,255,0),
+  "gress" : (150,255,100)
+}
 WINDOW_WIDTH = 640 # definerer bredde på vinduet
 WINDOW_HEIGHT = 480 # definerer høyde på vinduet
 FRAMES_PER_SECOND = 60 # definerer hvor mange frames (bilder) som vises hvert sekund
@@ -66,7 +72,7 @@ def levelstart1():
 def leveltick1():
     pass
 def leveltegn1():
-    pg.draw.rect(window,(150,255,100),(0,WINDOW_HEIGHT-200,WINDOW_WIDTH,200)) # gress
+    pg.draw.rect(window,Farger["gress"],(0,WINDOW_HEIGHT-200,WINDOW_WIDTH,200)) # gress
 
 # 3 - Initialize verden
 pg.init()
