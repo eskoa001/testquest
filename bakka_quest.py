@@ -19,6 +19,8 @@ FRAMES_PER_SECOND = 60 # definerer hvor mange frames (bilder) som vises hvert se
 speed = 200/FRAMES_PER_SECOND # definerer farten til spiller
 keys = [K_a,K_b,K_c,K_d,K_e,K_f,K_g,K_h,K_i,K_j,K_k,K_l,K_m,K_n,K_o,K_p,K_q,K_r,K_s,K_t,K_u,K_v,K_w,K_x,K_y,K_z,K_SPACE]
 keys_alt = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"," "]
+for i in range(len(keys_alt)):
+    keys_alt[i] = keys_alt[i].upper()
 
 # 2.5 definer klasser
 class spiller: 
@@ -92,16 +94,16 @@ _spiller = spiller(WINDOW_WIDTH/2,400,100,0,1)
 alle_leveler = [
     level( # test level
     [
-        felt(100,200,"interact","x", funk1), 
-        felt(100,300,"interact","y", funk2)
+        felt(100,200,"interact","X", funk1), 
+        felt(100,300,"interact","Y", funk2)
     ], 
     leveltick1,
     leveltegn1,
     levelstart1),
     level( # test level 2 med samme funk som level 1
     [
-        felt(100,200,"interact","x", funk1), 
-        felt(100,300,"interact","y", funk2)
+        felt(100,200,"interact","X", funk1), 
+        felt(100,300,"interact","Y", funk2)
     ], 
     leveltick1,
     leveltegn1,
