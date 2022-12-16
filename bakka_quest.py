@@ -102,8 +102,8 @@ alle_leveler = [
     levelstart1),
     level( # test level 2 med samme funk som level 1
     [
-        felt(100,200,"interact","X", funk1), 
-        felt(100,300,"interact","Y", funk2)
+        felt(100,200,"interact","x", funk1), 
+        felt(100,300,"interact","y", funk2)
     ], 
     leveltick1,
     leveltegn1,
@@ -170,7 +170,7 @@ while True:
         komando = komando[:-1]
     if (tast_trykket(K_RETURN)):
         for i in aktiv_felt:
-            if (komando == i.hotkey):
+            if (komando == i.hotkey.upper()):
                 i.funk()
         komando = ""
         # oppdater snakkeboble
