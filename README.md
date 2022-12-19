@@ -12,6 +12,7 @@ Her er det plass for et samarbeidsprosjekt i IT2. Alle kan delta - begge klassen
 ### Hvilke ting skal være felles i alle vinduer? 
 * Skal det være monstre? Skal man sloss? Snakke (skrive) sammen?
 * Kan man finne ting? Kjøpe ting?
+* samme controls? elller någendlunde noe så det ikke blir 30 egne spill
 
 ### Opprette et bibliotek med felles kode som kan importeres og gjenbrukes
 * klasser
